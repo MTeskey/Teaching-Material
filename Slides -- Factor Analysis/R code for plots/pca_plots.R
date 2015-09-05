@@ -1,11 +1,14 @@
-setwd('/Users/areshenk/Documents/Teaching-Material/Slides -- Factor Analysis/R code for plots')
+setwd('../Slides -- Factor Analysis/R code for plots')
 
 # Generate raw data
 x = rnorm(50, mean = 0, sd = 1)
 y = x + rnorm(50, mean = 0, sd = .5)
+x = c(x, 1.38)
+y = c(y, 2.35)
 
 # Do PCA
 svd.fit = svd(matrix(c(x,y), ncol = 2))
+svd.fit$v[,2] = -svd.fit$v[,2]
 
 # Plot 1
 setEPS()
@@ -15,13 +18,13 @@ par(mar = c(4, 4, 2, 2) + .1,
     oma = c(.1, .1, 0, .1) + 0.1)
 plot(x, y,
      xlab = 'Talkativeness',
-     ylab = 'Charisma',
+     ylab = 'Openness',
      pch = 16,
      xlim = c(-3,3),
      ylim = c(-3,3))
 abline(h = 0, lty = 2)
 abline(v = 0, lty = 2)
-grid(5,5)
+grid(NULL, NULL)
 dev.off()
 
 
@@ -33,7 +36,7 @@ par(mar = c(4, 4, 2, 2) + .1,
     oma = c(.1, .1, 0, .1) + 0.1)
 plot(x, y,
      xlab = 'Talkativeness',
-     ylab = 'Charisma',
+     ylab = 'Openness',
      pch = 16,
      xlim = c(-3,3),
      ylim = c(-3,3))
@@ -45,7 +48,7 @@ arrows(x0 = 0, y0 = 0,
 arrows(x0 = 0, y0 = 0,
        x1 = 0, y1 = 1,
        length = .15, lwd = 2, col = 'blue')
-grid(5,5)
+grid(NULL, NULL)
 dev.off()
 
 
@@ -57,7 +60,7 @@ par(mar = c(4, 4, 2, 2) + .1,
     oma = c(.1, .1, 0, .1) + 0.1)
 plot(x, y,
      xlab = 'Talkativeness',
-     ylab = 'Charisma',
+     ylab = 'Openness',
      pch = 16,
      xlim = c(-3,3),
      ylim = c(-3,3))
@@ -78,7 +81,7 @@ arrows(x0 = 1.38, y0 = 1,
 arrows(x0 = 1.38, y0 = 2,
        x1 = 1.38, y1 = 2.35,
        length = .15, lwd = 2, col = 'blue')
-grid(5,5)
+grid(NULL, NULL)
 dev.off()
 
 
@@ -90,19 +93,19 @@ par(mar = c(4, 4, 2, 2) + .1,
     oma = c(.1, .1, 0, .1) + 0.1)
 plot(x, y,
      xlab = 'Talkativeness',
-     ylab = 'Charisma',
+     ylab = 'Openness',
      pch = 16,
      xlim = c(-3,3),
      ylim = c(-3,3))
 abline(h = 0, lty = 2)
 abline(v = 0, lty = 2)
 arrows(x0 = 0, y0 = 0,
-       x1 = -svd.fit$v[1,1], y1 = -svd.fit$v[2,1],
+       x1 = svd.fit$v[1,1], y1 = svd.fit$v[2,1],
        length = .15, lwd = 2, col = 'red')
 arrows(x0 = 0, y0 = 0,
        x1 = svd.fit$v[1,2], y1 = svd.fit$v[2,2],
        length = .15, lwd = 2, col = 'red')
-grid(5,5)
+grid(NULL, NULL)
 dev.off()
 
 
@@ -114,26 +117,26 @@ par(mar = c(4, 4, 2, 2) + .1,
     oma = c(.1, .1, 0, .1) + 0.1)
 plot(x, y,
      xlab = 'Talkativeness',
-     ylab = 'Charisma',
+     ylab = 'Openness',
      pch = 16,
      xlim = c(-3,3),
      ylim = c(-3,3))
 abline(h = 0, lty = 2)
 abline(v = 0, lty = 2)
 arrows(x0 = 0, y0 = 0,
-       x1 = -svd.fit$v[1,1], y1 = -svd.fit$v[2,1],
+       x1 = svd.fit$v[1,1], y1 = svd.fit$v[2,1],
        length = .15, lwd = 2, col = 'red')
-arrows(x0 = -svd.fit$v[1,1], y0 = -svd.fit$v[2,1],
-       x1 = -2*svd.fit$v[1,1], y1 = -2*svd.fit$v[2,1],
+arrows(x0 = svd.fit$v[1,1], y0 = svd.fit$v[2,1],
+       x1 = 2*svd.fit$v[1,1], y1 = 2*svd.fit$v[2,1],
        length = .15, lwd = 2, col = 'red')
-arrows(x0 = -2*svd.fit$v[1,1], y0 = -2*svd.fit$v[2,1],
-       x1 = -2.7*svd.fit$v[1,1], y1 = -2.7*svd.fit$v[2,1],
+arrows(x0 = 2*svd.fit$v[1,1], y0 = 2*svd.fit$v[2,1],
+       x1 = 2.7*svd.fit$v[1,1], y1 = 2.7*svd.fit$v[2,1],
        length = .15, lwd = 2, col = 'red')
-arrows(x0 = -2.7*svd.fit$v[1,1], y0 = -2.7*svd.fit$v[2,1],
-       x1 = -2.7*svd.fit$v[1,1] + .6*svd.fit$v[1,2], 
-       y1 = -2.7*svd.fit$v[2,1] + .6*svd.fit$v[2,2],
+arrows(x0 = 2.7*svd.fit$v[1,1], y0 = 2.7*svd.fit$v[2,1],
+       x1 = 2.7*svd.fit$v[1,1] + .6*svd.fit$v[1,2], 
+       y1 = 2.7*svd.fit$v[2,1] + .6*svd.fit$v[2,2],
        length = .15, lwd = 2, col = 'red')
-grid(5,5)
+grid(NULL, NULL)
 dev.off()
 
 
@@ -144,7 +147,7 @@ postscript("../Latex/figures/pca6.eps",
 par(mar = c(4, 4, 2, 2) + .1,
     oma = c(.1, .1, 0, .1) + 0.1)
 plot(svd.fit$u[,1]*svd.fit$d[1], svd.fit$u[,2]*svd.fit$d[2],
-     xlab = 'Extroversion',
+     xlab = 'Extraversion',
      ylab = 'Noise',
      pch = 16,
      xlim = c(-3,3),
@@ -157,6 +160,6 @@ arrows(x0 = 0, y0 = 0,
 arrows(x0 = 0, y0 = 0,
        x1 = 0, y1 = 1,
        length = .15, lwd = 2, col = 'red')
-grid(5,5)
+grid(NULL, NULL)
 dev.off()
 

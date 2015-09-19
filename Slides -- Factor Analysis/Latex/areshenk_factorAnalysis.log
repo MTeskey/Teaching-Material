@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.12)  14 SEP 2015 11:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.6.12)  18 SEP 2015 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1273,151 +1273,191 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
 (Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 26.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./sections/pca.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 41.
+(Font)              <5> on input line 14.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 41.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 14.
 Package epstopdf Info: Source file: <figures/pca1.eps>
-(epstopdf)                    date: 2015-09-09 13:01:42
+(epstopdf)                    date: 2015-09-18 12:29:16
 (epstopdf)                    size: 6161 bytes
 (epstopdf)             Output file: <figures/pca1-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-09 13:01:42
+(epstopdf)                    date: 2015-09-18 12:29:16
 (epstopdf)                    size: 12185 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pca1-eps-converted
 -to.pdf figures/pca1.eps>
-(epstopdf)             \includegraphics on input line 41.
+(epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/pca1-eps-converted-to.pdf, id=38, 289.08pt x 289.08pt>
 File: figures/pca1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pca1-eps-converted-to.pdf>
-Package pdftex.def Info: figures/pca1-eps-converted-to.pdf used on input line 4
-1.
+Package pdftex.def Info: figures/pca1-eps-converted-to.pdf used on input line 1
+4.
 (pdftex.def)             Requested size: 173.44933pt x 173.44933pt.
  [2
 
  <./figures/pca1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/pca2.eps>
-(epstopdf)                    date: 2015-09-09 13:01:42
+(epstopdf)                    date: 2015-09-18 12:29:16
 (epstopdf)                    size: 6359 bytes
 (epstopdf)             Output file: <figures/pca2-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-09 13:01:42
+(epstopdf)                    date: 2015-09-18 12:29:16
 (epstopdf)                    size: 12237 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pca2-eps-converted
 -to.pdf figures/pca2.eps>
-(epstopdf)             \includegraphics on input line 56.
+(epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
  <figures/pca2-eps-converted-to.pdf, id=53, 289.08pt x 289.08pt>
 File: figures/pca2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pca2-eps-converted-to.pdf>
-Package pdftex.def Info: figures/pca2-eps-converted-to.pdf used on input line 5
-6.
+Package pdftex.def Info: figures/pca2-eps-converted-to.pdf used on input line 2
+9.
 (pdftex.def)             Requested size: 173.44933pt x 173.44933pt.
  [3
 
  <./figures/pca2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/pca3.eps>
-(epstopdf)                    date: 2015-09-09 13:01:42
+(epstopdf)                    date: 2015-09-18 12:29:16
 (epstopdf)                    size: 6594 bytes
 (epstopdf)             Output file: <figures/pca3-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-09 13:01:42
+(epstopdf)                    date: 2015-09-18 12:29:16
 (epstopdf)                    size: 12292 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pca3-eps-converted
 -to.pdf figures/pca3.eps>
-(epstopdf)             \includegraphics on input line 56.
+(epstopdf)             \includegraphics on input line 29.
 Package epstopdf Info: Output file is already uptodate.
  <figures/pca3-eps-converted-to.pdf, id=67, 289.08pt x 289.08pt>
 File: figures/pca3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pca3-eps-converted-to.pdf>
-Package pdftex.def Info: figures/pca3-eps-converted-to.pdf used on input line 5
-6.
+Package pdftex.def Info: figures/pca3-eps-converted-to.pdf used on input line 2
+9.
 (pdftex.def)             Requested size: 173.44933pt x 173.44933pt.
  [4
 
  <./figures/pca3-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/pca1.eps>
-(epstopdf)                    date: 2015-09-09 13:01:42
+(epstopdf)                    date: 2015-09-18 12:29:16
 (epstopdf)                    size: 6161 bytes
 (epstopdf)             Output file: <figures/pca1-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-09 13:01:42
+(epstopdf)                    date: 2015-09-18 12:29:16
 (epstopdf)                    size: 12185 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pca1-eps-converted
 -to.pdf figures/pca1.eps>
-(epstopdf)             \includegraphics on input line 73.
+(epstopdf)             \includegraphics on input line 46.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/pca1-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/pca1-eps-converted-to.pdf>
-Package pdftex.def Info: figures/pca1-eps-converted-to.pdf used on input line 7
-3.
+Package pdftex.def Info: figures/pca1-eps-converted-to.pdf used on input line 4
+6.
 (pdftex.def)             Requested size: 173.44933pt x 173.44933pt.
  [5
 
 ]
 Package epstopdf Info: Source file: <figures/pca4.eps>
-(epstopdf)                    date: 2015-09-09 13:01:42
+(epstopdf)                    date: 2015-09-18 12:29:16
 (epstopdf)                    size: 6372 bytes
 (epstopdf)             Output file: <figures/pca4-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-09 13:01:42
+(epstopdf)                    date: 2015-09-18 12:29:16
 (epstopdf)                    size: 12249 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pca4-eps-converted
 -to.pdf figures/pca4.eps>
-(epstopdf)             \includegraphics on input line 73.
+(epstopdf)             \includegraphics on input line 46.
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/pca4-eps-converted-to.pdf, id=87, 289.08pt x 289.08pt>
 File: figures/pca4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pca4-eps-converted-to.pdf>
-Package pdftex.def Info: figures/pca4-eps-converted-to.pdf used on input line 7
-3.
+Package pdftex.def Info: figures/pca4-eps-converted-to.pdf used on input line 4
+6.
 (pdftex.def)             Requested size: 173.44933pt x 173.44933pt.
  [6
 
  <./figures/pca4-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/pca5.eps>
-(epstopdf)                    date: 2015-09-09 13:01:42
+(epstopdf)                    date: 2015-09-18 12:29:16
 (epstopdf)                    size: 6540 bytes
 (epstopdf)             Output file: <figures/pca5-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-09 13:01:42
+(epstopdf)                    date: 2015-09-18 12:29:16
 (epstopdf)                    size: 12308 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pca5-eps-converted
 -to.pdf figures/pca5.eps>
-(epstopdf)             \includegraphics on input line 73.
+(epstopdf)             \includegraphics on input line 46.
 Package epstopdf Info: Output file is already uptodate.
  <figures/pca5-eps-converted-to.pdf, id=101, 289.08pt x 289.08pt>
 File: figures/pca5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pca5-eps-converted-to.pdf>
-Package pdftex.def Info: figures/pca5-eps-converted-to.pdf used on input line 7
-3.
+Package pdftex.def Info: figures/pca5-eps-converted-to.pdf used on input line 4
+6.
 (pdftex.def)             Requested size: 173.44933pt x 173.44933pt.
  [7
 
  <./figures/pca5-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/pca6.eps>
-(epstopdf)                    date: 2015-09-09 13:01:42
+(epstopdf)                    date: 2015-09-18 12:29:16
 (epstopdf)                    size: 6366 bytes
 (epstopdf)             Output file: <figures/pca6-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-09-09 13:01:42
+(epstopdf)                    date: 2015-09-18 12:29:16
 (epstopdf)                    size: 12231 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/pca6-eps-converted
 -to.pdf figures/pca6.eps>
-(epstopdf)             \includegraphics on input line 87.
+(epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
  <figures/pca6-eps-converted-to.pdf, id=116, 289.08pt x 289.08pt>
 File: figures/pca6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/pca6-eps-converted-to.pdf>
-Package pdftex.def Info: figures/pca6-eps-converted-to.pdf used on input line 8
-7.
+Package pdftex.def Info: figures/pca6-eps-converted-to.pdf used on input line 6
+0.
 (pdftex.def)             Requested size: 173.44933pt x 173.44933pt.
  [8
 
- <./figures/pca6-eps-converted-to.pdf>]
+ <./figures/pca6-eps-converted-to.pdf>]) (./sections/stressFactor.tex [9
+
+]
+Package epstopdf Info: Source file: <figures/stress_pairs.eps>
+(epstopdf)                    date: 2015-09-18 14:45:52
+(epstopdf)                    size: 72096 bytes
+(epstopdf)             Output file: <figures/stress_pairs-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2015-09-18 14:47:03
+(epstopdf)                    size: 147748 bytes
+(epstopdf)             Command: <repstopdf --outfile=figures/stress_pairs-eps-c
+onverted-to.pdf figures/stress_pairs.eps>
+(epstopdf)             \includegraphics on input line 22.
+Package epstopdf Info: Output file is already uptodate.
+
+<figures/stress_pairs-eps-converted-to.pdf, id=135, 433.62pt x 433.62pt>
+File: figures/stress_pairs-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/stress_pairs-eps-converted-to.pdf>
+Package pdftex.def Info: figures/stress_pairs-eps-converted-to.pdf used on inpu
+t line 22.
+(pdftex.def)             Requested size: 216.80946pt x 216.80946pt.
+ [10
+
+ <./figures/stress_pairs-eps-converted-to.pdf>] <figures/stress_comp1.png, id=1
+49, 602.25pt x 401.5pt>
+File: figures/stress_comp1.png Graphic file (type png)
+
+<use figures/stress_comp1.png>
+Package pdftex.def Info: figures/stress_comp1.png used on input line 35.
+(pdftex.def)             Requested size: 150.56212pt x 100.37474pt.
+
+<figures/stress_comp2.png, id=150, 602.25pt x 401.5pt>
+File: figures/stress_comp2.png Graphic file (type png)
+
+<use figures/stress_comp2.png>
+Package pdftex.def Info: figures/stress_comp2.png used on input line 35.
+(pdftex.def)             Requested size: 150.56212pt x 100.37474pt.
+ [11
+
+ <./figures/stress_comp1.png> <./figures/stress_comp2.png>])
 \tf@nav=\write6
 \openout6 = `areshenk_factorAnalysis.nav'.
 
@@ -1427,21 +1467,21 @@ Package pdftex.def Info: figures/pca6-eps-converted-to.pdf used on input line 8
 \tf@snm=\write8
 \openout8 = `areshenk_factorAnalysis.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
  (./areshenk_factorAnalysis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 91.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
 Package rerunfilecheck Info: File `areshenk_factorAnalysis.out' has not changed
 .
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
- 28050 strings out of 493304
- 645810 string characters out of 6139871
- 858135 words of memory out of 5000000
- 30802 multiletter control sequences out of 15000+600000
+ 28118 strings out of 493304
+ 647127 string characters out of 6139871
+ 859135 words of memory out of 5000000
+ 30853 multiletter control sequences out of 15000+600000
  47850 words of font info for 50 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  52i,15n,75p,742b,689s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1450,10 +1490,10 @@ public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmsso10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sy
 mbols/msam10.pfb>
-Output written on areshenk_factorAnalysis.pdf (8 pages, 150782 bytes).
+Output written on areshenk_factorAnalysis.pdf (11 pages, 313709 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 184 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 184 words of extra memory for PDF output out of 10000 (max. 10000000)
 

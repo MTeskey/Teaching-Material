@@ -1,0 +1,42 @@
+\documentclass{beamer}
+\usetheme{simple}
+
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetikzlibrary{shapes}
+\usepackage[export]{adjustbox}
+\usepackage{lmodern}
+\usepackage{transparent}
+\usepackage[scale=2]{ccicons}
+\usepackage{xcolor}
+
+\setbeamercovered{invisible}
+
+\title{Questionably Bayesian Psychology}
+\date{October 2, 2015}
+\author{Corson N. Areshenkoff}
+\institute{University of Victoria}
+
+\begin{document}
+
+\maketitle
+\AtBeginSection{\frame{\sectionpage}}
+
+\begin{frame}{Overview}
+\tableofcontents
+\end{frame}
+
+% Frequentism and NHST
+\section{The Need for Bayesian Methods}
+\input{sections/frequent.tex}
+
+% Questionably Bayesian Factors
+\section{Questionably Bayesian Factors}
+\input{sections/QBHT.tex}
+
+% The Problem of (Weak) Priors
+\section{The Problem of (Weak) Priors}
+
+
+\end{document}

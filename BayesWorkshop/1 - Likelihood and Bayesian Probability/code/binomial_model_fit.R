@@ -6,7 +6,7 @@ data = read.csv('coinflip_data.csv', header = F)
 
 # Create data file for stan
 stan_data = list(N = dim(data)[1],
-                 h = sum(data[,1]))
+                 k = sum(data[,1]))
 
 # Fit stan model
 stan_fit = stan(file = 'binomial_model.stan',

@@ -1,6 +1,6 @@
 data {
     int<lower=0> N; // Number of flips
-    int h;          // Number of heads
+    int k;          // Number of heads
 }
 
 parameters {
@@ -8,6 +8,6 @@ parameters {
 }
 
 model {
-    h ~ binomial(N, p);
+    k ~ binomial(N, p);
     p ~ beta(1,1);
 }

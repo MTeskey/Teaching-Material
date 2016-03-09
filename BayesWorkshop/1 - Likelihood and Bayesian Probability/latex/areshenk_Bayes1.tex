@@ -2,8 +2,8 @@
 \usetheme{simple}
 
 \usepackage{amsmath}
-\usepackage{pgfplots}
 \usepackage[export]{adjustbox}
+\usepackage{graphicx}
 \usepackage{lmodern}
 \usepackage{transparent}
 \usepackage[scale=2]{ccicons}
@@ -152,6 +152,21 @@ Some examples:
 
 
 % Bayes
+\begin{frame}{Bayesian Probability}
+What does probability mean? 
+    \begin{itemize}
+        \item "A coin flip has a \%50 chance of landing on heads"
+            \begin{description}
+                \item[Frequentist] If we flip the coin a large number of times, approximately
+                        half of the coin flips will be heads.
+                \item[Bayesian] If we're asked to call a coin flip, we have no reason to 
+                        prefer heads or tails.
+            \end{description}
+\textbf{Frequentists} define probability in terms of long-run averages.\par
+\textbf{Bayesians} define probability in terms of degrees of belief. 
+    \end{itemize}
+\end{frame}
+
 \begin{frame}{Bayesian Estimation}
 Suppose that we pick up a newly minted coin and flip it $N=4$ times, obtaining $k=3$ heads.
 The MLE for the probability $p$ is $k/N = 0.75$.\par
@@ -162,15 +177,74 @@ Which is more plausible?
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Bayesian Estimation}
+    \begin{enumerate}
+        \item Decide on a model (a set of distribution that characterize the data)
+        \item Specify prior distributions for the model parameters
+        \item Use data to update the prior distributions (w/ likelihood)
+        \item Obtain posterior
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Bayesian Estimation}
+Or, more rigorously...
+    \begin{enumerate}
+        \item Define a statistical model with parameters $\Theta$.
+        \item Model gives a likelihood function $\mathcal{L}(\Theta|D) = p(D|\Theta)$, which     
+              summarizes the evidence contained in the data.
+        \item Specify a prior distribution $p(\Theta)$, which summarizes our prior belief
+              about the parameters.
+        \item Combine the likelihood and the prior to get a posterior distribution
+              $p(\Theta|D)$.
+              \[ p(\Theta|D) \propto p(D|\Theta)p(\Theta) \]
+              which summarizes our new belief about the parameter, after taking into account
+              the data.
+    \end{enumerate}
+\end{frame}
+
 \begin{frame}
     \begin{figure}
     \centering
-        \includegraphics[width=1\textwidth]{/images/binom_likelihood.eps}
+        \includegraphics[width=.8\textwidth]{../images/binom_likelihood.pdf}
         \caption{Binomial likelihood function for $N=4$ and $k=3$.}
     \end{figure}
 \end{frame}
 
+\begin{frame}
+    \begin{figure}
+    \centering
+        \includegraphics[width=.8\textwidth]{../images/binom_prior.pdf}
+        \caption{Beta(20,20) prior distribution for binomial parameter $p$.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+    \centering
+        \includegraphics[width=.8\textwidth]{../images/binom_prior_likelihood.pdf}
+        \caption{Likelihood and prior together.}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \begin{figure}
+    \centering
+        \includegraphics[width=.8\textwidth]{../images/binom_posterior.pdf}
+        \caption{Relationship between prior, likelihood, and posterior distribution.}
+    \end{figure}
+\end{frame}
+
+
+
 % Fitting models in STAN
+\begin{frame}
+In general, computing posterior distributions is difficult or impossible, so we have to approximate them using e.g. MCMC. \par
+
+There are several software packages to do this (e.g. BUGS, JAGS, Stan). \par 
+
+We use Stan, for reasons that we'll get into next time.
+\end{frame}
+
 \begin{frame}[fragile]
 The \textbf{data} block specifies the data that will be passed to Stan:
 \begin{verbatim}

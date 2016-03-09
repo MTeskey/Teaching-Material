@@ -1,0 +1,16 @@
+The complete .stan file is then:
+\begin{verbatim}
+    data {
+        int<lower=0> N; // Number of coin flips
+        int k;          // Number of heads
+    }
+
+    parameters {
+        real<lower=0, upper = 1> p;
+    }
+
+    model {
+        h ~ binomial(N, p);  // Likelihood
+        p ~ beta(1,1);       // Prior
+    }
+\end{verbatim}
